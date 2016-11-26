@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sane Asynchronous Programming with RxJS</title>
+    <meta charset="utf-8">
+    <style>
+      @font-face{ font-family: 'Droid Serif'; src: url('fonts/DroidSerif.ttf'); }
+      @font-face{ font-family: 'Yanone Kaffeesatz'; src: url('fonts/YanoneKaffeesatz.ttf'); }
+      @font-face{ font-family: 'Ubuntu Mono'; src: url('fonts/UbuntuMono.ttf'); }
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      a { text-decoration: none; }
+      a:link, a:visited {
+        color: #3498DB
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .left-column, .right-column, .half-column {
+        position: relative;
+        float: left;
+      }
+		  .left-column {
+        width: 40%;
+      }
+      .left-column h2 {
+        margin-top: 10px;
+      }
+      .right-column {
+        width: 60%;
+      }
+      .half-column {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source"></textarea>
+    <script src="js/remark-latest.min.js"></script>
+    <script>
+      var slideshow = remark.create({
+        sourceUrl: 'slides.md',
+        countIncrementalSlides: false,
+        slideNumberFormat: '',
+        highlightStyle: 'sunburst',
+        highlightSpans: true,
+        highlightLines: true,
+      });
+    </script>
+  </body>
+</html>
